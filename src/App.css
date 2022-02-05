@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0px; 
+  padding: 0px;
+}
+
+html, body {
+  background-color: #F0EFEB;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sedgwick+Ave&display=swap');
+
+/* =====NAV===== */
+
+.nav {
+  background-color: #32746D;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+h1 {
+  font-family: 'Sedgwick Ave', cursive;
+  color: white;
+  font-size: 50px;
+  margin-left: 15px;
+  letter-spacing: 7px;
+}
+
+/* =====HERO===== */
+.hero {
+  background-image: url('https://res.cloudinary.com/dhbumhhh1/image/upload/c_scale,h_500/v1643908389/atlanta-project/atlanta_sfdxxr.jpg');
+  height: 400px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 5px 5px black;
+}
+
+/* =====INTRO===== */
+.intro {
+  background-image: url("https://res.cloudinary.com/dhbumhhh1/image/upload/v1643910203/atlanta-project/a_c1cw3a.png");
+  background-repeat: no-repeat;
+  background-position: 10% 80%;
+  padding: 80px; 
+}
+
+.intro-headline {
+  text-align: center;
+  color: #104F55;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 46px;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+
+.intro-copy {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding: 20px 120px; 
+}
+
+/* =====PLACES===== */
+
+.places {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  padding-bottom: 60px;
+}
+
+.places-image {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: center;
+  filter: drop-shadow(10px 10px 8px #104F55);
+}
+
+.places-copy{
+  grid-area: 1 / 2 / 2 / 3;
+  padding: 15px 100px 0px 15px;
+  justify-self: center;
+}
+
+.inman {
+  max-height: 500px;
+}
+
+
+.places-headline {
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 32px; 
+  color: #01497C;
+  padding-bottom: 15px;
+}
+
+.places-intro {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+
+.places-bullets {
+  list-style-image: url("https://res.cloudinary.com/dhbumhhh1/image/upload/v1643912754/atlanta-project/a-bullet_s1n7ph.png");
+  padding-left: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.places-bullet {
+  padding-bottom: 12px;
+}
+
+
+/* =====RESTAURANTS===== */
+.restaurants-image {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: center;
+  filter: drop-shadow(10px 10px 8px #104F55);
+}
+
+.restaurants-copy{
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 15px 0px 0px 140px;
+  justify-self: center;
+}
+
+/* =====BREWERIES===== */
+
+.brew-headline {
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 32px; 
+  color: #01497C;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.brew-copy {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.brewery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70px 30px 70px 30px;
+  text-align: center;
+  column-gap: 100px;
+  row-gap: 100px;
+}
+
+.brewery-card {
+  width: 400px;
+  height: auto;
+  background-color: #32746D;
+  color: white;
+  padding: 50px 20px 50px 20px;
+  box-shadow: 8px 8px 5px black;
+  transition: all .2s ease-in-out;
+}
+
+.brewery-card:hover {
+  transform: scale(1.1);
+}
+
+.brewery-headline {
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 24px; 
+  padding-bottom: 10px;
+}
+
+.brewery-details {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding-bottom: 3px;
+}
+
+.brewery-links {
+  text-decoration: none;
+}
+
