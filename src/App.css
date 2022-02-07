@@ -148,7 +148,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 70px 30px 70px 30px;
+  margin: 70px 30px 100px 30px;
   text-align: center;
   column-gap: 100px;
   row-gap: 100px;
@@ -184,3 +184,49 @@ h1 {
   text-decoration: none;
 }
 
+/* =====PLAN===== */
+
+.plan {
+  background-color: #2d7da0;
+  padding: 40px 60px 40px 60px;
+}
+
+#white {
+  color: white;
+}
+
+.plan-button {
+  padding: 15px; 
+  border: none;
+  background-color: white;
+  color: grey;
+  font-size: 16px;
+  font-family: 'Sedgwick Ave', cursive;
+  transition: all .3s;   
+}
+
+.plan-button:hover {
+  background-color: #F0EFEB;
+  border: 2px solid #F0EFEB;
+  color: #2C7DA0;
+  transform: scale(1.1);
+}
+
+.plan-btn-div {
+  text-align: center;
+}
+
+.random-day {
+  display: flex;
+  justify-content: center;
+  column-gap: 100px; 
+  row-gap: 50px;
+  padding: 35px 100px 45px 100px;
+  text-align: center;
+}
+
+.random {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 24px;
+}

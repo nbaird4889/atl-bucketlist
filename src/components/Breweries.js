@@ -11,7 +11,6 @@ function Breweries (props) {
         const response = await fetch(URL);
         const data = await response.json();
         setBrewery(data);
-        console.log(data)
     }
 
     const loading = () => {
@@ -20,9 +19,9 @@ function Breweries (props) {
 
     const loaded = () => {
         return brewery.filter(brewery => brewery.brewery_type !== "planning").map((brewery) => (
-          <a className="brewery-links" href={brewery.website_url} target="_blank"><div key={brewery._id} className="brewery-card">
+          <a className="brewery-links" rel="noreferrer" href={brewery.website_url} target="_blank"><div key={brewery._id} className="brewery-card">
             <h2 className="brewery-headline">{brewery.name}</h2>
-            <h3 className="brewery-details">{brewery.brewery_type.charAt(0).toUpperCase() + brewery.brewery_type.slice(1)}</h3>
+            <h3 className="brewery-details">Type: {brewery.brewery_type.charAt(0).toUpperCase() + brewery.brewery_type.slice(1)}</h3>
             <h3 className="brewery-details">{brewery.street}</h3>
             <h3 className="brewery-details">{brewery.city}</h3>
             

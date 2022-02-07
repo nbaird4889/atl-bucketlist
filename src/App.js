@@ -8,6 +8,7 @@ import Places from './components/Places';
 import Restaurants from './components/Restaurants';
 import Breweries from './components/Breweries';
 import Bars from './components/Bars';
+import Plan from './components/Plan';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Restaurants />
       <Bars />
       <Breweries />
+      <Plan />
     </div>
   );
 }
