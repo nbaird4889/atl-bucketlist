@@ -338,6 +338,10 @@ h1 {
   .skyline {
     height: 300px;
   }
+
+  .nav {
+    justify-content: center;
+  }
   
   
 
