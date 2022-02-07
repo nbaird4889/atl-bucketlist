@@ -9,6 +9,8 @@ import Restaurants from './components/Restaurants';
 import Breweries from './components/Breweries';
 import Bars from './components/Bars';
 import Plan from './components/Plan';
+import Image from './components/Image';
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
       <Bars />
       <Breweries />
       <Plan />
+      <Image />
+      <Footer />
     </div>
   );
 }

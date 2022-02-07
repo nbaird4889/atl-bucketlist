@@ -6,6 +6,7 @@
 
 html, body {
   background-color: #F0EFEB;
+  overflow-x: hidden;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
@@ -230,3 +231,116 @@ h1 {
   color: white;
   font-size: 24px;
 }
+
+/* SKYLINE IMAGE */
+
+.skyline {
+  background-image: url('https://res.cloudinary.com/dhbumhhh1/image/upload/c_scale,h_800/v1644266700/stephen-cook-tjdu7p_PaEM-unsplash_yb0ymf.jpg');
+  height: 400px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 5px 5px black;
+}
+
+.footer {
+  padding: 60px;
+  background-color: #32746D;
+  background-image: url("https://res.cloudinary.com/dhbumhhh1/image/upload/v1644267167/atlanta-project/a-footer_z0nlon.png");
+  background-position: center bottom;
+  background-repeat: repeat-x; 
+  animation: animatedBackground 40s linear infinite;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 20% 100%; }
+	to { background-position: 100% 100%; }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* INTRO */
+  .intro {
+    background-position: 10% 60%;
+    padding: 80px 40px 80px 40px; 
+  }
+
+  /* PLACES */
+  .places {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  .places-copy{
+    padding: 15px 100px 0px 100px;
+  }
+
+  .restaurants-copy{
+    padding: 15px 100px 0px 100px;
+    justify-self: center;
+  }
+
+  /* PLAN DAY */
+  .random-day {
+    flex-wrap: wrap;
+    padding: 35px 60px 45px 60px;
+  }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+  /* INTRO */
+  .intro {
+    background-image: none;
+    padding: 40px 20px 40px 10px; 
+  }
+  
+  .intro-copy {
+    padding: 20px 20px; 
+  }
+
+  .places-copy{
+    padding: 15px 40px 0px 40px;
+  }
+
+  .restaurants-copy{
+    padding: 15px 40px 0px 40px;
+  }
+
+  .inman {
+    max-height: 300px;
+  }
+
+  .brew-headline {
+    padding: 0px 20px 15px 20px;
+  }
+  
+  .brew-copy {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .brewery-card {
+    width: 300px;
+    height: auto;
+  }
+
+  .plan {
+    padding: 40px 20px 40px 20px;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .skyline {
+    height: 300px;
+  }
+  
+  
+
+
+}
+
